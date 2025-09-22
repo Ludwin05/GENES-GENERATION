@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GENES GENERATION</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧬 GENES GENERATION</h1>
+    <p class="intro">
+      Explore how <b>eye color</b> and <b>hair type</b> are inherited in 
+      <i>Homo sapiens</i> using Punnett square principles.
+    </p>
+
+    <div class="parents">
+  <div class="parent-card">
+    <h3>Parent 1</h3>
+    <label>Eye Genotype:
+      <select id="eye1">
+        <option value="Bb">Bb (Brown)</option>
+        <option value="bb">bb (Blue)</option>
+      </select>
+    </label>
+    <label>Hair Genotype:
+      <select id="hair1">
+        <option value="Cc">Cc (Curly)</option>
+        <option value="cc">cc (Straight)</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="parent-card">
+    <h3>Parent 2</h3>
+    <label>Eye Genotype:
+      <select id="eye2">
+        <option value="Bb">Bb (Brown)</option>
+        <option value="bb">bb (Blue)</option>
+      </select>
+    </label>
+    <label>Hair Genotype:
+      <select id="hair2">
+        <option value="Cc">Cc (Curly)</option>
+        <option value="cc">cc (Straight)</option>
+      </select>
+    </label>
+  </div>
+</div>
+
+
+    <button id="simulate">🔎 Simulate Offspring</button>
+
+    <h2>Offspring Results</h2>
+    <div id="punnett-container" class="punnett-container"></div>
+    <div id="offspring-list" class="offspring-grid-container"></div>
+    <div id="how-it-works" class="explanation"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
